@@ -33,7 +33,7 @@ function Highlighter({
 
   useEffect(() => {
     notifyCaretPosition()
-  }, [caretElement])
+  }, [caretElement, selectionEnd])
 
   const notifyCaretPosition = () => {
     if (!caretElement) {
